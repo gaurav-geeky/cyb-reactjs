@@ -80,3 +80,26 @@ ___ export  it
 ___ import in app.jsx file 
 ___ apply in return with  < Image /> ex. 
 
+
+# 9 july 2025
+# bundler : 
+it gives us automatic files no ned to make extra js css  files 
+
+framework : 
+
+node modle : project work,   depoendency and packages,  reat projet kis par  depend h 
+
+npm int   __ node module 
+
+app jsx   is by default import in  main jsx  
+
+
+obj  is used to stroe multi data  .  combimation key value pair  
+
+
+props act   as object when use in child1.jsx (child component) 
+
+
+first beracket js   second of  object .  {{... info1}}   
+
+we pass varibles in tags  inside {  var } ,  also objects

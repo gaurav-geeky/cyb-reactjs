@@ -17,7 +17,7 @@ let Hero = () => {
                     <p> <h4>12k+</h4> Ticket solved</p>
                     <p> <h4>9/10</h4> Average Rating</p>
                 </div>
-            </div>
+            </div> 
 
             <div id="breedimg">
                 <img src={mybreed} alt="" /> 

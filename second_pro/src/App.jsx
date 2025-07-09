@@ -11,6 +11,7 @@ import { Service1, Service2 } from "./my components/Service"
 import Image from "./my components/Image" 
 import Hero from "./my components/Hero" 
 
+
 function App ( ) { 
 
   return ( 
@@ -25,8 +26,8 @@ function App ( ) {
       <Service2/> 
 
       <Image/> 
-
-      <Hero />
+      <Hero /> 
+      
     </>
 
   )
