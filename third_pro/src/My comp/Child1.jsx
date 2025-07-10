@@ -1,12 +1,19 @@
 //  child 1 jsx in  third project 
 
-const Child1 = (props) => { 
+import Child5 from "./Child5"
+
+const Child1 = ({naming}) => { 
 
     return ( 
         <> 
             <h1>hey this is Child 1</h1> 
 
-            <h2> {props.name} is {props.age} yr old lives in {props.city} </h2>
+            {/* <h2> {props.name} is {props.age} yr old lives in {props.city} </h2>  */} 
+
+            
+            
+            <Child5 name={naming} /> 
+
         </>
     ) 
 } 
