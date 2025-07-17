@@ -1,10 +1,16 @@
 import { useState } from "react";
+import State from "./my comp st/State";
+
+
 
 function App () { 
 
   let [name, setName] = useState("cybrom")    // cybrom is initial value /   // name , setname is var & func 
   let [age, setAge] = useState(89)     
-  let [contact, setCon] = useState(12346)     
+  let [contact, setCon] = useState(12346)   
+  
+  
+  let [counter, setCounter] = useState(0)     
 
   function fun() { 
     setName("react js")
@@ -22,6 +28,19 @@ function App () {
 
   return ( 
     <>
+
+    < State />  <br /> <br /> 
+
+    <h1 className="text-5xl text-center font-semibold mt-4"> welcome - {counter} </h1> 
+    <button onClick={() => setCounter(counter+1)}> start count</button>
+{/*  increase counter   */}
+
+
+
+
+
+
+
     <h1>this is useState (camelCase) - {name} & age - {age} </h1>
     
     <button onClick={fun}> tap here </button>
