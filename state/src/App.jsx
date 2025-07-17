@@ -1,17 +1,12 @@
 import { useState } from "react";
 import State from "./my comp st/State";
 
-
-
 function App () { 
 
   let [name, setName] = useState("cybrom")    // cybrom is initial value /   // name , setname is var & func 
   let [age, setAge] = useState(89)     
   let [contact, setCon] = useState(12346)   
   
-  
-  let [counter, setCounter] = useState(0)     
-
   function fun() { 
     setName("react js")
   } 
@@ -22,18 +17,41 @@ function App () {
   let [add, setAdd] = useState (0)
   let count=1; 
 
+
+  let [counter, setCounter] = useState(0) 
+
   function increment () { 
      setAdd(prev => prev + 1);
   }
 
+  //  now using ternary operator, usestate 
+  let [a, setA] = useState (false) 
+
   return ( 
     <>
 
-    < State />  <br /> <br /> 
 
     <h1 className="text-5xl text-center font-semibold mt-4"> welcome - {counter} </h1> 
     <button onClick={() => setCounter(counter+1)}> start count</button>
-{/*  increase counter   */}
+  {/*  increase counter   */}
+
+
+    <br /> <br /> 
+    {a? "": <h1 className="text-4xl ml-4 "> Hide me </h1>} 
+
+    <button className="border p-3 rounded-2xl" onClick={()=> setA(true) }> click here</button> 
+    <button className="border p-3 rounded-2xl" onClick={()=> setA(false) }> click here</button> 
+    <button className="border p-3 rounded-2xl" onClick={()=> setA(!a) }> Toggle here</button> 
+
+    <button className="border p-3 rounded-2xl" onClick={()=> setA(!a) }> 
+    {a? "show": "Hide"}
+    </button>       
+
+{/*  to change button name aslo use ternary inside button  */}
+{/*  now ternary and usestate */}
+
+
+    < State />  <br /> <br /> 
 
 
 

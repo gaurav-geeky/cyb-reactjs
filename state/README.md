@@ -13,56 +13,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-# hooks : they are normal js function, which is pre-defined in react. 
-react is js library,  pre def function in js is hooks.  
-diff hooks different works.   
-chang in UI : use state Hooks.   
-
-use state hooks return array in the destructure form .  
-aray has    variable and function .  
-keep it at top of function. 
-
-vari value can be updated by it's function only  ..........
-
-all events will be writeen in camle case   .......
-
-#  to func with event with paraemter or argument we need arrow function.  
-
-
-use state to change any UI 
-here not getelemtent 
-
-use state return array  in which 2  variable and function. 
-
-
-# 16 july 2025......... 
-
-# useState is import from React 
-then use in function   above return 
-
-1.   we can pass any type of value inside use state   like  variabl,  string, object 
-use STAte  by default returns an array   
-let [ person, setper ]  
-
-use CSS framework in  making   REACT  project.... 
-
-2.  talwent framewrok of css rse .  
-talwent cutomise in media queryy 
-
-3.  it has predefi class 
-4.  easy for UI  designing.   
-5. 
-6. all html pro not works here   we have to made it .  
-7. 
-8.  
-9. 
-10. 
-11. 
- 12. 
- 13. 
- 14. 
- 15. 
-
-
+ 
 
 

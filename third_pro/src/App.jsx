@@ -10,7 +10,7 @@ import Child4 from "./My comp/Child4"
 
 
 import Child1 from "./My comp/Child1" 
-import { Gi3dGlasses } from "react-icons/gi";  
+import { Gi3dGlasses } from "react-icons/gi";    // icons in react    ICONS 
 
 const App = () => {  
 
