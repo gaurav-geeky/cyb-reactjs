@@ -197,8 +197,11 @@ export function Child2 ( {contact, city} ) {
 
 #  ###################################################### ___________________________________________
 
+# projects and topics 
 
 state project : tailwind , useState,  
+# 17 july, 2025  
+
 
 second project   :   css apply  
 
@@ -207,4 +210,29 @@ forth project :  props   exp imp  1 comp to   other comp
 third project  :  make object  , varibale in function  and use  in  return how. 
 
 task color : change bg color with react.  
+
+#  ###################################################### ___________________________________________
+
+# 18 july, 2025     18 july, 2025   18 july, 2025   18 july, 2025  
+
+# project  route_pro 
+1. router to navigate another page in our componenet. 
+
+2. 1st intall it .  npm install react-router-dom 
+
+it's entry in package . json   dependencies me.  ....... 
+
+ # start.. 
+Browser Router ->  navigation enable   karega.  (boss) __  it is written in main jsx (  to router the componenets coming to app jsx )
+
+routes ->  direction dikhayega.  (manager) __  written in app jsx
+
+route -> path="index" element = {}.  (employee) konse path pe konsa element render hoga  .  written in app jsx.  
+
+link  
+
+outlet 
+
+
+
 
