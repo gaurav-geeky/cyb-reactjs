@@ -3,8 +3,8 @@ import { Link, Outlet } from "react-router-dom"
 function Layout () { 
 
     return (
-
         <> 
+
         <nav> 
             <ul> 
                 <li> <Link to="/">  Home</Link></li>
@@ -21,6 +21,8 @@ function Layout () {
             <h1> this is our footer 3</h1>
 
         </footer>
+
+
         </>
     ) 
 

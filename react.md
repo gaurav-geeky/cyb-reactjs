@@ -233,27 +233,14 @@ link
 
 outlet 
 
+
 #  19 july, 2025  19 july, 2025    19 july, 2025      19 july, 2025  
 
 by default index is main page , so always put     <Route  index element={<Home />} />  
 # index 
 as a path to find  home page  <home/ >
 
-
-
-# layout 
-
-
-<Routes> 
-        <!--  here  path="/" element={ <Layout/ > }  means main page will look like      Layout  and  " / "   / is to show main index page.   --> 
-          <Route path="/" element={ <Layout/ > }> 
-
-            <Route index element={ <Home />}  />
-            <Route path="/about" element={ <About />}  />
-            <Route path="/contact" element={ <Contact />}  />
-
-          </Route>
-        </Routes>
+#  _________________________________________________________
 
 1.   #        <Route index element={ <Home />}  />
     to show home page in index   we do not need path  just 
@@ -265,9 +252,7 @@ as a path to find  home page  <home/ >
     __ always put Home  on  index. ( jis pg ko 1st me  ,  index me then  give it's path ) 
     all coponenet will render as URL  
 
-
-
-# ###############################
+#  _________________________________________________________
 
 <> 
         <nav> 
@@ -286,7 +271,53 @@ as a path to find  home page  <home/ >
             <h1> this is our footer 3</h1>
         </footer>
 </>   
-        
 
-1.  
+#  to use  Link   ,  Outlet ,  Routes / Route   WE MUST IMPORT IT  1st.  
+
+# Link tag 
+1.  here anchor tag not work but    link tag (not CSS) __ Link (react wala) 
+Link  come from react-router-dom. __  <Link to="/about"> About </Link> 
+2.  here page do not reload  ( anchor tag reloads) 
+3.  we use Link tag &    Routes and <Route /> 
+
+# Layout for  _____ making  fixed__ Nav (header)   &  Footer 
+
+1. here for linking  Index     we use only     /     as a path 
+2. we have  change     Home  to   index        because main page of any website is    known by  index 
+so to go on   index ______  path ___ " / "  b
+
+3.  every pg has   header & footer  fix   but   elements (mid) change. 
+
+
+# layout 
+
+
+<Routes>  
+        <!--  here  path="/" element={ <Layout/ > }  means main page will look like      Layout  and  " / "   / is to show main index page.   --> 
+    <Route path="/" element={ <Layout/ > }>  
+    <!-- layout jsx is comp    call in route  -->
+          <!--  path  /   because har page pe ye layout chahiye .
+          layout element  will   render in it.
+          parent root  -->   // parent it has nav footer  
+
+
+<!--  here child root 
+path  ki  jagah index ispe (home)   &      /  har page pe nav & footer 
+
+similarly   /about path ____ -->
+                <Route index element={ <Home />}  />            // child
+                <Route path="/about" element={ <About />}  />
+                <Route path="/contact" element={ <Contact />}  />
+
+<!--  to change all these comp   help__ Outlet   comp --> 
+<!--   Outlet  to render child in root.  -->
+
+
+    </Route> 
+
+
+</Routes>
+
+#        /      for    nav  &  footer  
+# call    Outlet  to render components  jaha Outlet waha component.
 
