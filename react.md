@@ -223,16 +223,70 @@ task color : change bg color with react.
 it's entry in package . json   dependencies me.  ....... 
 
  # start.. 
-Browser Router ->  navigation enable   karega.  (boss) __  it is written in main jsx (  to router the componenets coming to app jsx )
+Browser Router ->  navigation enable   karega.  (boss) __  it is written in main jsx (  to router the componenets coming to app jsx ) 
 
-routes ->  direction dikhayega.  (manager) __  written in app jsx
+routes ->  direction dikhayega.  (manager) __  written in app jsx 
 
 route -> path="index" element = {}.  (employee) konse path pe konsa element render hoga  .  written in app jsx.  
 
-link  
+link 
 
 outlet 
 
+#  19 july, 2025  19 july, 2025    19 july, 2025      19 july, 2025  
+
+by default index is main page , so always put     <Route  index element={<Home />} />  
+# index 
+as a path to find  home page  <home/ >
 
 
+
+# layout 
+
+
+<Routes> 
+        <!--  here  path="/" element={ <Layout/ > }  means main page will look like      Layout  and  " / "   / is to show main index page.   --> 
+          <Route path="/" element={ <Layout/ > }> 
+
+            <Route index element={ <Home />}  />
+            <Route path="/about" element={ <About />}  />
+            <Route path="/contact" element={ <Contact />}  />
+
+          </Route>
+        </Routes>
+
+1.   #        <Route index element={ <Home />}  />
+    to show home page in index   we do not need path  just 
+    write  index
+
+    __now  browser will  show  home pg.  as default pg. 
+    __if   /home  nothing  becase it is in index 
+    /about   then  About 
+    __ always put Home  on  index. ( jis pg ko 1st me  ,  index me then  give it's path ) 
+    all coponenet will render as URL  
+
+
+
+# ###############################
+
+<> 
+        <nav> 
+            <ul> 
+                <li> <Link to="/">  Home</Link></li>
+                <li> <Link to="/about">  About</Link></li>
+                <li> <Link to="/Contact">  Contact</Link></li>
+            </ul>
+        </nav>
+
+#       <Outlet /> 
+
+        <footer> 
+            <h1> this is our footer 1</h1>
+            <h1> this is our footer 2</h1>
+            <h1> this is our footer 3</h1>
+        </footer>
+</>   
+        
+
+1.  
 

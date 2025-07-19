@@ -3,7 +3,7 @@ import { RiReactjsLine } from "react-icons/ri";
 function Contact() {
 
     return (
-        < >
+        <>
             <br />
             <div className=" border-2 border-blue-400 w-2xl m-3">
 
