@@ -5,7 +5,7 @@ function Contact() {
     return (
         <>
             <br />
-            <div className=" border-2 border-blue-400 w-2xl m-3">
+            <div className="  border-2 border-blue-400 w-2xl m-3">
 
                 <h1 className=" text-xl text-red-500 text-center font-bold m-2  " > This is our Contact Form react here </h1>
 

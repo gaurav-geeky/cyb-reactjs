@@ -1,33 +1,31 @@
 import { Link, Outlet } from "react-router-dom"
 
-function Layout () { 
+function Layout() {
 
     return (
-        <> 
+        <>
 
-        <nav> 
-            <ul> 
-                <li> <Link to="/">  Home</Link></li>
-                <li> <Link to="/about">  About</Link></li>
-                <li> <Link to="/Contact">  Contact</Link></li>
-            </ul>
-        </nav>
+            <nav className=" flex  items-center  bg-blue-500  border-b-1 border-white  p-2   " > 
+                <p className="ml-5  text-6xl  font-bold " > Stock Broker  </p>  &ensp;  &ensp;
+                <Link className=" text-xl " to="/">  Home</Link> &ensp; &ensp;
+                <Link className=" text-xl "  to="/about">  About</Link>  &ensp;  &ensp; 
+                <Link className=" text-xl "  to="/contact">  Contact</Link>  &ensp;  &ensp;
+                <Link className=" text-xl "  to="/services">  Services </Link> 
+            </nav>
 
-        <Outlet /> 
+            <Outlet />
 
-        <footer> 
-            <h1> this is our footer 1</h1>
-            <h1> this is our footer 2</h1>
-            <h1> this is our footer 3</h1>
+            <footer>
+                <h1>  </h1>
+               
 
-        </footer>
-
+            </footer>
 
         </>
-    ) 
+    )
 
 }
 
-export default Layout 
+export default Layout
 
 
