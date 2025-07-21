@@ -321,3 +321,40 @@ similarly   /about path ____ -->
 #        /      for    nav  &  footer  
 # call    Outlet  to render components  jaha Outlet waha component.
 
+
+
+
+# 21 july, 2025.  21 july, 2025.   21 july, 2025.    useEffect_pro 
+
+#  to call Api  use effect.  
+use Effect to call API for getting data. 
+we need 1st  jsx  come in browser to not make screen blank then,    get API data. 
+
+useEffect ( call back,  dpencdency) 
+
+#  Use by 3 types 
+# due to useEffect that   print  will work multiple time 
+1.  without dependency  ________  use effect ( ()=> {} ) 
+__  whenever our component render in browser it works each time ,  when do something then also 
+___ har ek render pe chalega use Effect (slow down process )   1st time   2 bar due to strict mode,  
+
+
+(to fast the process     []  empty dependency)
+2.  use effect with    empty  dependency______  use Effect ( ()=>{ } ,   []  )   
+here dependency is in array format.
+___ 1 time run  when our component render on web pag.  
+
+
+
+3.  use Effect with dependency ________  (  ()=> {} ,  [var_name] )  
+when this var value change    use Effect works.  
+___ comp render on browser (due to console_ 1 time , due to strict mode shows 2 times)  +  when variable update.
+
+
+
+ . component,  jsx,  css ,   tailwind,  use state,  icon,  event,  routing ,  
+
+hook in react   func in js   
+js norfn cint   use in react with help of hook 
+
+
