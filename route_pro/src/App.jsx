@@ -18,26 +18,27 @@ function App() {
 
         {/* <h1 > this is our app page </h1> */}
 
-        {/* <Routes > */}
+        {/* <Routes >
 
-        {/* <Route path="/home" element={<Home />} />  */}
+          <Route path="/home" element={<Home />} />
 
-        {/* <Route index element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
 
-        </Routes>  */}
+        </Routes> */}
 
         <Routes>
 
-                  <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Layout />}>
 
-                          <Route index element={<Home />} />
-                          <Route path="/about" element={<About />} />
-                          <Route path="/contact" element={<Contact />} />
-                          <Route path="/services" element={<Services />} />
-                      
-                  </Route>
+                <Route index element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/services" element={<Services />} />
+
+            </Route>
+
         </Routes>
 
       </div>

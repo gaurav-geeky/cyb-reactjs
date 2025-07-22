@@ -1,5 +1,10 @@
+.
+.
+.
+.
 
-# REACT from   3 july , 2025  _____________ 
+.
+# REACT from   3 july , 2025  _____________  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 src __ is most imp folder ,  all the components will be made inside src. 
 gitignore __ where the file you do not want to upload . 
@@ -9,7 +14,7 @@ gitignore __ where the file you do not want to upload .
 app.jsx  ____ code aya ___________ main.jsx se
 app.jsx ________ called by ___________ Home.jsx , About.jsx , Contact.jsx  (src  me  components) 
 
-#  5 july, 2025.  _____________ 
+#  5 july, 2025.  _____________  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 1.  In index.html file  we link script tag   in which attribute  type = "module"  to enable import export k.w. 
 __ import   export   are the part of ES6 
@@ -31,7 +36,8 @@ __ import   export   are the part of ES6
         </>
     )
 
-#   7 july 2025  _____________
+#   7 july 2025  _____________   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ 
+
 # in react we can use CSS in 3 type s inline,  internal and external but here in the form of object . 
 
 App () {
@@ -68,7 +74,7 @@ ___ apply in return with  < Image /> ex.
 
 
 
-# 9 july 2025 _____________
+# 9 july 2025 _____________  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 # bundler : 
 it gives us automatic files no ned to make extra js css  files 
@@ -91,7 +97,7 @@ we pass varibles in tags  inside {  var } ,  also objects
 
 
 
-# 10 july 2025   _____________
+# 10 july 2025   _____________  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 props drilling ; it is used to flow data from parent to  child 1 >>  child2  and so on. 
 app .jsx as a attribute, 
@@ -135,7 +141,7 @@ here not getelemtent
 use state return array  in which 2  variable and function. 
 
 
-# 16 july 2025......... 
+# 16 july 2025.........  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 # useState is import from React 
 then use in function   above return 
@@ -156,7 +162,7 @@ talwent cutomise in media queryy
 7. 
 
 
- # 17 july 2025 
+ # 17 july 2025   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 ternary operator  with  useSTAte: with  !a   (not opeartor works for both ) on  off  like switch.  
 
@@ -168,7 +174,7 @@ ternary operator  with  useSTAte: with  !a   (not opeartor works for both ) on  
 
 
 
-#  8 july 2025 
+#  8 july 2025  8 july 2025   8 july 2025     8 july 2025   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 PROPS : props are called properties and the combination of attributes and parameters ( with the help of which we can sent any data from parent to child). 
 
@@ -200,7 +206,7 @@ export function Child2 ( {contact, city} ) {
 # projects and topics 
 
 state project : tailwind , useState,  
-# 17 july, 2025  
+# 17 july, 2025  17 july, 2025  17 july, 2025     ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 
 second project   :   css apply  
@@ -213,12 +219,12 @@ task color : change bg color with react.
 
 #  ###################################################### ___________________________________________
 
-# 18 july, 2025     18 july, 2025   18 july, 2025   18 july, 2025  
+# 18 july, 2025     18 july, 2025   18 july, 2025   18 july, 2025   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
 # project  route_pro 
 1. router to navigate another page in our componenet. 
 
-2. 1st intall it .  npm install react-router-dom 
+2. _____________ 1st intall it . __________ npm install react-router-dom  _____________________-
 
 it's entry in package . json   dependencies me.  ....... 
 
@@ -234,7 +240,7 @@ link
 outlet 
 
 
-#  19 july, 2025  19 july, 2025    19 july, 2025      19 july, 2025  
+#  19 july, 2025  19 july, 2025    19 july, 2025      19 july, 2025  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ 
 
 by default index is main page , so always put     <Route  index element={<Home />} />  
 # index 
@@ -324,7 +330,9 @@ similarly   /about path ____ -->
 
 
 
-# 21 july, 2025.  21 july, 2025.   21 july, 2025.    useEffect_pro 
+# 21 july, 2025.  21 july, 2025.   21 july, 2025.    useEffect_pro    ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ 
+
+#   
 
 #  to call Api  use effect.  
 use Effect to call API for getting data. 
@@ -357,4 +365,12 @@ ___ comp render on browser (due to console_ 1 time , due to strict mode shows 2 
 hook in react   func in js   
 js norfn cint   use in react with help of hook 
 
+
+# 22 july, 2025.  22 july, 2025.   22 july, 2025.    Form    ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ 
+
+this form is used to get value ( how to print in react ) 
+
+input me se value  ko kaise nikale 
+sabse pehle onchange function se event object chalega   __  usme target me  value se ki madad se  ___   input value nikalenge. 
+ 
 
