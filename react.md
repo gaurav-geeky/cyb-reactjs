@@ -141,7 +141,7 @@ here not getelemtent
 use state return array  in which 2  variable and function. 
 
 
-# 16 july 2025.........  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+# 16 july 2025.........  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ 
 
 # useState is import from React 
 then use in function   above return 
@@ -374,3 +374,78 @@ input me se value  ko kaise nikale
 sabse pehle onchange function se event object chalega   __  usme target me  value se ki madad se  ___   input value nikalenge. 
  
 
+#  22 july, 2025    form handling .. ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+
+1.  what we type in input tag ,  we need to handle it (in js we target input then value because there was html pg)   
+(in  REACT)   :   form value handle krna aur   kisi cheez me store krke show  krna hai 
+
+at each time   has to get each value   .    so event onchange in input. 
+
+now empty  as we write smt ___  each value will get  using on change {event} ___  in this call function ___  handleInput  ___  make func  above return  ___ 
+
+# instead of making function in EVENT   we can make arrow fun here. 
+and pass value there
+___   onChange={ (e)=> setAge(e.target.value) }   ___
+
+onchange (event) fire kiya usme fun (handleInput) ____ 
+
+now we want value which is coming should come in function  ( when we fire event  then   it gives       EVENT OBJECT pass hoga ).   
+
+event obj       jis function ko call kia  uske pass jata hai . 
+
+now handle  event obj  with the help of  parameter ___ function handleInput( e ) { } ___ 
+
+now we   print e ,        this functin works  when   input value changes  
+
+now see when we print (e)  in  console it shows diff prototypes   ___ (e ) event obj ___ target (obj) ___ value (obj) ___ .
+
+#  now to store that value  somewhere
+
+use   useState  , ___ use setValue function(of use State) in onChange (event)   ___    then use variable value of useState in   h1 or else tag ___
+
+1.      <label htmlFor=" "> Weight </label>
+        <input type="text" onChange={ (e)=> setValue (e.target.value) } />
+
+
+2.      <h2> data is :  {value}</h2> 
+
+# MULTI FORM HANDLE  react ... ❤️❤️❤️❤️❤️  
+
+here we need pattern 
+we need to make  1 use State, 1 function call ho 
+1. define use state :  here pass object -- give key name, " " (empty value)  
+2.  so now var of useState  hold object 
+
+dynamic value chahiye    so  give dynamic key & value.  
+___ key ___  name attribute ___ me pass key ( ye jayega  func me ) 
+(because we want to store in object)  
+
+3.   make same event onchange in   both input fields ( only 1 function )
+
+now see we give (e) as a parameter of function   ___ (e ) event obj ___ target (obj) ___ key : value (object ka) ___ . (dynamic value lena ha)
+
+4. ab   EVENT OBJ  jaye function me __________  hold it in parameter (e)
+ab yaha pe object me  key: vlaue  dono  ayega toh
+e.target.value   ni likhenge 
+
+5. so destructure here. _________     const {name, value } = e.target 
+#  name for key    name attribute
+
+6. now form data   ke   data   ko   re-write  krn hai.  
+_________  1st  make object ( {  } )   
+_________  get prev    values   ...frmdata 
+_________  get dynmaic name value     [name]:value  ( [key] ) 
+key always come in bracket [ ] 
+object has    dot notation ...OBJ   &   bracket notation [key] 
+
+
+7.  now  onsubmit   event in  whole form 
+now funtion   event object    
+
+    function finalsubmit (event) { 
+        event.preventDefault() 
+        console.log( frmdata)
+    } 
+
+#   form submission ko rokne ke liye  prevent default 
+data  will be  shown  when we submit  form.  

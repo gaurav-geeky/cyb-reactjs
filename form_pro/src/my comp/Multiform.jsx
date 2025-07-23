@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 function Multiform() { 
     let [frmdata, setFrmdata] = useState( {
         name: "", age: "" 
@@ -21,7 +20,7 @@ function Multiform() {
         <>
         <h1> Multiform with object  </h1> 
 
-        <form action=" " onSubmit={ finalsubmit }> 
+        <form action=" " onSubmit= {finalsubmit}> 
 
             <label htmlFor=" "> Name </label>
             <input type="text" name="name" onChange={handleInput } />  <br /> 
@@ -34,4 +33,4 @@ function Multiform() {
         </>
     )
 }
-export default Multiform
+export default Multiform 
