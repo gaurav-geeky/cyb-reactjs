@@ -9,6 +9,8 @@ import Services from './my Comp route/Services'
 
 
 import Layout from './my Comp route/Layout'
+import Localshow from '../../form_pro/src/my comp/Localshow'
+import { Localstorage } from '../../form_pro/src/my comp/Localst'
 
 function App() {
 
@@ -28,7 +30,7 @@ function App() {
 
         </Routes> */}
 
-        <Routes>
+        {/* <Routes>
 
             <Route path="/" element={<Layout />}>
 
@@ -38,6 +40,13 @@ function App() {
                 <Route path="/services" element={<Services />} />
 
             </Route>
+
+        </Routes> */} 
+
+        <Routes>
+
+            <Route index element={<Localstorage />} />
+            <Route path='/localshow' element={< Localshow />} />
 
         </Routes>
 

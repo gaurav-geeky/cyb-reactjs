@@ -1,25 +1,39 @@
-import Form from "./my comp/Form";
-import Multiform from "./my comp/Multiform";
+import Form from "./my comp/Form"; //  single form 
+
+import Multiform from "./my comp/Multiform";   // multi form 
 
 import './App.css'
-import { Localstorage } from "./my comp/Localst";  
+import { Route, Routes } from "react-router-dom"; 
+
+import { LocalStorage } from "./my comp/LocalStorage"; 
+
+import LocalForm from "./my comp/Localform";   //  for use navigator 
+
+import LocalShow from "./my comp/Localshow";   // on submit data show on another page 
 
 
 function App() {
 
   return (
-    <>  <Localstorage />
+    <>
+      {/* <LocalStorage />
 
-   <br /> 
-     
+      <br />
+
       <h1> this si app jsx content</h1>
-      <br /> <br /> 
+      <br /> <br />
       <h1> here is form with individual useStates  &ensp; variable form </h1>
-      < Form/>
+      < Form />
 
-      <br /> <br /> <br /> 
+      <br /> <br /> <br />
       <h1> here is form with single useState in object form  </h1>
-      < Multiform />
+      < Multiform /> */}
+
+      <br />  <br /> 
+          <Routes>
+            <Route index element={<LocalForm/>}/>
+            <Route path="/localshow" element={<LocalShow/>}/>
+          </Routes>
 
     </>
   )

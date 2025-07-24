@@ -449,3 +449,9 @@ now funtion   event object
 
 #   form submission ko rokne ke liye  prevent default 
 data  will be  shown  when we submit  form.  
+
+
+in jsx go one  to another   LINk  tag 
+
+in function use   navigator  to   go   1 to another page.  
+functin name anything . 

@@ -22,19 +22,19 @@ function Form() {
         
         <form action=" "> 
             <label htmlFor=" "> Name </label>
-            <input type="text" onChange={ handleInput } />
+            <input type="text" onChange={ handleInput } />  <br /> 
             
             <label htmlFor=" "> Age </label>
-            <input type="text" onChange={ (e)=> setAge(e.target.value) } />
+            <input type="text" onChange={ (e)=> setAge(e.target.value) } />  <br /> 
             
             <label htmlFor=" "> color </label>
-            <input type="text" onChange={ (f)=> setColor(f.target.value) } /> 
+            <input type="text" onChange={ (f)=> setColor(f.target.value) } />   <br /> 
 
             <label htmlFor=" "> Height </label>
-            <input type="text" onChange={ (e)=> setHeight(e.target.value) } /> 
+            <input type="text" onChange={ (e)=> setHeight(e.target.value) } />  <br /> 
 
             <label htmlFor=" "> Weight </label>
-            <input type="text" onChange={ (e)=> setWeight(e.target.value) } />
+            <input type="text" onChange={ (e)=> setWeight(e.target.value) } />  <br /> 
 
 
         </form>
