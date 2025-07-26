@@ -20,8 +20,10 @@ import { useNavigate } from 'react-router-dom'  // local form with navigator
     function handlesubmit(e) {
         e.preventDefault()
         console.log(frmdata)
-        localStorage.setItem('userdata', JSON.stringify(frmdata))
-        let show = JSON.parse(localStorage.getItem('userdata')) 
+        
+        localStorage.setItem('userdata', JSON.stringify(frmdata))  // to set data in local storeage  setItem 
+
+        let show = JSON.parse(localStorage.getItem('userdata'))  // to print data somewhere need  getItem (kahi bhi )
         setShowdata(show)
 
         navigator( './localshow') 

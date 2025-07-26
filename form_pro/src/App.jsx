@@ -5,7 +5,7 @@ import Multiform from "./my comp/Multiform";   // multi form
 import './App.css'
 import { Route, Routes } from "react-router-dom"; 
 
-import { LocalStorage } from "./my comp/LocalStorage"; 
+// import { LocalStorage } from "./my comp/LocalStorage"; 
 
 import LocalForm from "./my comp/Localform";   //  for use navigator 
 
