@@ -1,5 +1,5 @@
 
-function LocalShow (props) { 
+function LocalShow () { 
 
     return ( 
         <>  

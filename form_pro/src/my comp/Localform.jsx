@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'  // local form with navigator
 
     let [showdata, setShowdata] = useState({ })  // to show data below form 
 
-  let navigator=useNavigate();   // to navigate one to another page
+  let navigator = useNavigate();   // to navigate one to another page
 
     function handleInput(e) {
         let { name, value } = e.target

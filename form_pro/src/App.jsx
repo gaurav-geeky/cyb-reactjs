@@ -8,8 +8,8 @@ import { Route, Routes } from "react-router-dom";
 // import { LocalStorage } from "./my comp/LocalStorage"; 
 
 import LocalForm from "./my comp/Localform";   //  for use navigator 
+import LocalShow from "./my comp/LocalShow";
 
-import LocalShow from "./my comp/Localshow";   // on submit data show on another page 
 
 
 function App() {

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react" 
 
 let Form = () => {
 
@@ -13,11 +13,10 @@ let Form = () => {
 
     let [showdata, setShowdata] = useState({})    //     to show data sm where. 
 
-
+    
     let final = (e) => {      //         final submission pr form rok     ke   data console kiya
         e.preventDefault()
         console.log(info)
-
         //                               localStorage  set to   store value and  get to print anywhere
         localStorage.setItem("userInfo", JSON.stringify(info))
         let got = JSON.parse(localStorage.getItem("userInfo"))
@@ -26,10 +25,11 @@ let Form = () => {
     }
 
     return (
-        <> 
+        <>
 
-            <div style={{ width: "100%", height: "50vh", backgroundColor: "lightyellow" }} >
+            <div style={{ width: "100%", height: "85vh", backgroundColor: "lightyellow" }} >
                 <h1> this is form component</h1>
+
 
                 <form action="" onSubmit={final}>
 

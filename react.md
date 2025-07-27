@@ -240,6 +240,8 @@ link
 outlet 
 
 
+
+ 
 #  19 july, 2025  19 july, 2025    19 july, 2025      19 july, 2025  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ 
 
 by default index is main page , so always put     <Route  index element={<Home />} />  
@@ -278,6 +280,7 @@ as a path to find  home page  <home/ >
         </footer>
 </>   
 
+
 #  to use  Link   ,  Outlet ,  Routes / Route   WE MUST IMPORT IT  1st.  
 
 # Link tag 
@@ -285,6 +288,9 @@ as a path to find  home page  <home/ >
 Link  come from react-router-dom. __  <Link to="/about"> About </Link> 
 2.  here page do not reload  ( anchor tag reloads) 
 3.  we use Link tag &    Routes and <Route /> 
+
+
+
 
 # Layout for  _____ making  fixed__ Nav (header)   &  Footer 
 

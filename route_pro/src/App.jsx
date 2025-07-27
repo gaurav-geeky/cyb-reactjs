@@ -7,10 +7,7 @@ import About from './my Comp route/About'
 import Contact from './my Comp route/Contact'
 import Services from './my Comp route/Services'
 
-
 import Layout from './my Comp route/Layout'
-import Localshow from '../../form_pro/src/my comp/Localshow'
-import { Localstorage } from '../../form_pro/src/my comp/Localst'
 
 function App() {
 
@@ -30,25 +27,20 @@ function App() {
 
         </Routes> */}
 
-        {/* <Routes>
-
-            <Route path="/" element={<Layout />}>
-
-                <Route index element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/services" element={<Services />} />
-
-            </Route>
-
-        </Routes> */} 
 
         <Routes>
 
-            <Route index element={<Localstorage />} />
-            <Route path='/localshow' element={< Localshow />} />
+          <Route path="/" element={<Layout />}>
+
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+
+          </Route>
 
         </Routes>
+
 
       </div>
     </>
@@ -61,4 +53,10 @@ export default App
 
 
 
+{/* <Routes>
+
+      <Route index element={<Localstorage />} />
+      <Route path='/localshow' element={< Localshow />} />
+
+</Routes> */}
 
