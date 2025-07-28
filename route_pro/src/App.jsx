@@ -15,13 +15,12 @@ function App() {
     < >
       <div >
 
-        {/* <h1 > this is our app page </h1> */}
+        <h1 > this is our app page </h1>
 
         {/* <Routes >
-
-          <Route path="/home" element={<Home />} />
-
-          <Route index element={<Home />} />
+          //                      first time while we create path and it's element. 
+           
+          <Route index element={<Home />} /> //       by default first home page opens
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
 
@@ -41,22 +40,9 @@ function App() {
 
         </Routes>
 
-
       </div>
     </>
   )
 }
 
-export default App
-
-
-
-
-
-{/* <Routes>
-
-      <Route index element={<Localstorage />} />
-      <Route path='/localshow' element={< Localshow />} />
-
-</Routes> */}
-
+export default App    

@@ -1,18 +1,17 @@
-
 import { createContext } from 'react'
-import Child1 from './component/Child1'
 
+import Child1 from './component/Child1'
 
 import Dashboard from './component/Dashboard'
 
-
-
+ 
 let store = createContext()  // global because kahi bhi bhej sakte hai  
 //                            // if made insdie then it becomes local 
 let name = " I am from app page"
 
+
 //  jitni cheze bhejni hai utne function banenge arrow wale (jaha bhejna hai )
-let game = " ... game var in app ...."
+let game = " ... cricket, badminton,  volleyball ...."
 
 // object global 
 let user = {

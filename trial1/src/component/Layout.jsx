@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom"
 
 
-export function Layout() {
+export let Layout = ()=> {
 
     return (
         <>
@@ -9,11 +9,11 @@ export function Layout() {
 
                 <p>I am appointed here as a nav bar with Layout (outlet)</p>
 
-                <p style={{ border: "2px solid black", padding: "1px", borderRadius: "20px", width: "60px" }} > <Link to="/state">State</Link> </p>
+                <p style={{ border: "2px solid black", padding: "1px", borderRadius: "20px", width: "60px", backgroundColor: "red", color: "white" }} > <Link to="/state">State</Link> </p>
 
-                <p style={{ border: "2px solid black", padding: "1px", borderRadius: "20px", width: "60px" }} > <Link to="/color">Color</Link> </p>
+                <p style={{ border: "2px solid black", padding: "1px", borderRadius: "20px", width: "60px", backgroundColor: "blue", color: "white" }} > <Link to="/color">Color</Link> </p>
 
-                <p style={{ border: "2px solid black", padding: "1px", borderRadius: "20px", width: "60px" }} > <Link to="/form">Form</Link> </p>
+                <p style={{ border: "2px solid black", padding: "1px", borderRadius: "20px", width: "60px", backgroundColor: "brown", color: "white" }} > <Link to="/form">Form</Link> </p>
 
             </header>
 

@@ -18,7 +18,8 @@ function App() {
       <Routes>
             <Route path="/" element={ < Layout /> }>  
               
-                <Route path='/state' element={ < State/>} />
+                <Route index element={ < State/>} />
+                {/* <Route path='/state' element={ < State/>} /> */}
                 <Route path='/color' element={ < Color/>} />
                 <Route path='/form' element={ < Form/>} />
 
@@ -27,13 +28,13 @@ function App() {
 
 
 {/*  for normal routing     /abc     and go */}
-      <Routes >
+      {/* <Routes >
 
         <Route path="/state" element={<State />} />
         <Route path="/color" element={<Color />} />
         <Route path="/form" element={<Form />} />
 
-      </Routes>
+      </Routes> */}
 
 
 

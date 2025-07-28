@@ -3,7 +3,7 @@
 // her no use   `   ` for sometime. 
 
 
-import Contact from "./my components/Contact" 
+import Contact  from "./my components/Contact" 
 
 import About from "./my components/About" 
 

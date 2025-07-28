@@ -35,10 +35,10 @@ const App = () => {
             {/*  now it will be access using destructre */} 
         <br />  
 
-            {/* < Child3 user3={info} />  */}
+            < Child3 user3={info} /> 
         <br />  
 
-            {/* < Child4 user4={{...info}}  />  */}
+            < Child4 user4={{...info}}  /> 
 
             {/*   < Child4 ...info  />  */}
         </>

@@ -1,9 +1,11 @@
 
-const Service1 = () => { 
+const Service1 = ( a, b) => { 
     return (
         <>
             <h1>Service 1 function </h1>
-            <p> service 1 para tag</p>
+            <p> service 1 para tag</p> 
+
+            return a+b 
         </>
     )
 } 
@@ -17,7 +19,7 @@ const Service2 = () => {
     )
 }
 
-export { Service1, Service2} 
+export { Service1, Service2 }   
 
 
 
