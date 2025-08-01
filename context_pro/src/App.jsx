@@ -4,14 +4,18 @@ import Child1 from './component/Child1'
 
 import Dashboard from './component/Dashboard'
 
- 
+//  let storegame = createContext()
 let store = createContext()  // global because kahi bhi bhej sakte hai  
 //                            // if made insdie then it becomes local 
 let name = " I am from app page"
 
 
 //  jitni cheze bhejni hai utne function banenge arrow wale (jaha bhejna hai )
+
+
 let game = " ... cricket, badminton,  volleyball ...."
+
+
 
 // object global 
 let user = {
@@ -42,9 +46,13 @@ function App() {
         <Dashboard />
       </store.Provider>  
 
+      {/* <storegame.Provider value={game}>
+    <Dashboard /> 
+      </storegame.Provider> */}
+
     </>
   )
 }
 
 export default App
-export { store }
+export { store,  }

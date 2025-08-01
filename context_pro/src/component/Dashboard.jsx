@@ -1,12 +1,12 @@
 import { useContext } from "react"
-import { store } from "../App"
+import { store,  } from "../App"
 import Setting from "./Setting"
 
 
 function Dashboard() {
 
-    let data = useContext(store)
-
+    let data = useContext(store) 
+    // let gamedata = useContext(storegame)
     return (
         <>
             <h1> this is dashboard </h1>
@@ -18,7 +18,7 @@ function Dashboard() {
 
             <h1> data from app to dashboard pass : __ usecontext__ {data.pass} </h1>
 
-            <h1> this is game in use context ___   </h1>
+            <h1> this is game in use context ___  </h1>
 
             <br /> <br />
             <store.Consumer>

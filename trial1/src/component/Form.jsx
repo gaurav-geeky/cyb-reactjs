@@ -1,4 +1,6 @@
 import { useState } from "react" 
+import { useNavigate } from "react-router-dom"
+
 
 let Form = () => {
 
@@ -13,6 +15,7 @@ let Form = () => {
 
     let [showdata, setShowdata] = useState({})    //     to show data sm where. 
 
+    let navigate = useNavigate()
     
     let final = (e) => {      //         final submission pr form rok     ke   data console kiya
         e.preventDefault()
@@ -22,7 +25,12 @@ let Form = () => {
         let got = JSON.parse(localStorage.getItem("userInfo"))
         setShowdata(got)
 
+        navigate('./color')
+
     }
+
+
+
 
     return (
         <>

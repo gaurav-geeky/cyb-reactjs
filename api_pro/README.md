@@ -22,3 +22,25 @@ here we use npm install axios.  for getting data
 
 
 
+/*
+
+PS C:\Users\gaurav negi\OneDrive\Desktop\cybrom react\api_pro\src> cd '.\comp api\'
+PS C:\Users\gaurav negi\OneDrive\Desktop\cybrom react\api_pro\src\comp api> json-server --watch Data.json
+--watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+JSON Server started on PORT :3000
+Press CTRL-C to stop
+Watching Data.json...
+
+♡⸜(˶˃ ᵕ ˂˶)⸝♡
+
+Index:
+http://localhost:3000/
+
+Static files:
+Serving ./public directory if it exists
+
+Endpoints:
+http://localhost:3000/userdata
+
+
+*/

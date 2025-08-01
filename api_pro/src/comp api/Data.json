@@ -1,0 +1,39 @@
+{
+  "userdata": [
+    {
+      "id": "4a64",
+      "name": "amit",
+      "contact": "22222",
+      "city": "rewa",
+      "email": "tiwari@mail.com"
+    },
+    {
+      "id": "836e",
+      "name": "yashraj",
+      "contact": "123456667",
+      "city": "Dmart",
+      "email": "damani@Dmart.com"
+    },
+    {
+      "id": "e09a",
+      "name": "kanu",
+      "contact": "3453211",
+      "city": "Delhi",
+      "email": "kanu@gmail.com"
+    },
+    {
+      "id": "2e88",
+      "name": "raja",
+      "contact": "1111111",
+      "city": "nagar",
+      "email": "mai"
+    },
+    {
+      "id": "435e",
+      "name": "abhishek singh",
+      "contact": "p 53",
+      "city": "cybrom",
+      "email": "merstack@gmail.com"
+    }  
+  ]
+}

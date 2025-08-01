@@ -37,13 +37,13 @@ import { useNavigate } from 'react-router-dom'  // local form with navigator
 {/* want to go in next page no action */} 
 
             <form  onSubmit={handlesubmit}>
-                <label htmlFor=" "> Name </label>
+                <label htmlFor=" "> Name_ </label>
                 <input type="text" name="name" onChange={handleInput} /> <br />
 
-                <label htmlFor=" "> Email </label>
+                <label htmlFor=" "> Email_ </label>
                 <input type="text" name="email" onChange={handleInput} />  <br />
 
-                <label htmlFor=" "> Password </label>
+                <label htmlFor=" "> Password_ </label>
                 <input type="text" name="password" onChange={handleInput} />  <br />
 
                 <input type="submit" />
