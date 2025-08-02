@@ -1,3 +1,4 @@
+
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom'  // local form with navigator
 
@@ -33,7 +34,7 @@ import { useNavigate } from 'react-router-dom'  // local form with navigator
     
     return (
         <>
-            <h1> Sign up form </h1>
+            <h1> Sign up form local form </h1>
 {/* want to go in next page no action */} 
 
             <form  onSubmit={handlesubmit}>

@@ -4,7 +4,7 @@ import Form from './component/Form'
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Layout } from './component/Layout'
+// import { Layout } from './component/Layout'
 
 
 function App() {
@@ -15,16 +15,15 @@ function App() {
       <h1 > this is our App jsx page in trial1 task </h1>
 
 {/*  for  fix header footer */}
-      <Routes>
+      {/* <Routes>
             <Route path="/" element={ < Layout /> }>  
               
                 <Route index element={ < State/>} />
-                {/* <Route path='/state' element={ < State/>} /> */}
                 <Route path='/color' element={ < Color/>} />
                 <Route path='/form' element={ < Form/>} />
 
             </Route>
-      </Routes>
+      </Routes> */}
 
 
 {/*  for normal routing     /abc     and go */}

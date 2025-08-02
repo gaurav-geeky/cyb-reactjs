@@ -1,18 +1,27 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export let Color = () => {
 
     let [color, setcolor] = useState("lightpink")
 
+    let [info, setInfo] = useState({  // to take form value in object form
+        name: "", email: "", password: ""
+    })
+
+    useEffect(() => {
+        let ok = JSON.parse(localStorage.getItem("userInfo"))
+        setInfo(ok)
+    }, [])
+
     return (
         <>
             <div style={{ width: "100%", height: "85vh", backgroundColor: color }}>
-                <h1 style={{  }}> this is color component</h1>
+                <h1 style={{ color: "blue", fontSize: "40px" }}> this is color component</h1>
 
 
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    
+
                     <button style={{ width: "100px", height: "auto", border: "1px solid black", margin: "5px", backgroundColor: "red" }} onClick={() => setcolor("red")} > red btn </button>
 
                     <button style={{ width: "100px", height: "auto", border: "1px solid black ", margin: "5px", backgroundColor: "lightblue" }} onClick={() => setcolor("blue")} > blue btn </button>
@@ -24,8 +33,12 @@ export let Color = () => {
                     <button style={{ width: "100px", height: "auto", border: "1px solid black", margin: "5px", backgroundColor: "white" }} onClick={() => setcolor("lightpink")} > reset btn </button>
 
                 </div>
+                <h1>{info.name}</h1>
 
             </div>
         </>
     )
 }
+
+
+

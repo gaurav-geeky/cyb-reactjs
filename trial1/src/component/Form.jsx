@@ -25,18 +25,16 @@ let Form = () => {
         let got = JSON.parse(localStorage.getItem("userInfo"))
         setShowdata(got)
 
-        navigate('./color')
+        navigate('/color')   
 
     }
-
-
 
 
     return (
         <>
 
             <div style={{ width: "100%", height: "85vh", backgroundColor: "lightyellow" }} >
-                <h1> this is form component</h1>
+                <h1 style={{ fontSize: "40px", color: "red"}}> this is form component</h1>
 
 
                 <form action="" onSubmit={final}>

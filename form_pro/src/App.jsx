@@ -1,6 +1,6 @@
-import Form from "./my comp/Form"; //  single form 
+// import Form from "./my comp/Form"; //  single form 
 
-import Multiform from "./my comp/Multiform";   // multi form 
+// import Multiform from "./my comp/Multiform";   // multi form 
 
 import './App.css'
 import { Route, Routes } from "react-router-dom"; 
@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom";
 
 import LocalForm from "./my comp/Localform";   //  for use navigator 
 import LocalShow from "./my comp/LocalShow";
-
 
 
 function App() {
