@@ -5,12 +5,34 @@ import { useEffect, useState } from "react"
 
 let Api = () => {
 
-    let [apidata, setApidata] = useState([])
+    let [showfrm, setShowfrm] = useState() // to edit data 1st show form 
+
+    let [editdata, setEditdata] = useState({})  // now edit data 
+
+    function handleEdit(e) {
+        const { name, value } = e.target
+        setEditdata({ ...editdata, [name]: value })
+    }
+    //                                      here handle  data being edited
+    function finalEdit(e) {
+        e.preventDefault()
+        axios.put(`http://localhost:3000/userdata/${editdata.id}`, editdata)
+            .then(() => alert("updated..."))
+    }
+    
+    //                                    delete always using id (unique)(with useEffect it delete immediatley , browser change on each delete)
+    
+    function handleDelete(id) {
+        axios.delete(`http://localhost:3000/userdata/${id}`)
+            .then(() => alert("Deleted..!! "))
+    }
+
+    let [apidata, setApidata] = useState([])  // to show data in form
 
     useEffect(() => {
         axios.get('http://localhost:3000/userdata')
             .then((res) => setApidata(res.data))
-    }, [])
+    }, [handleDelete])
 
     return (
         <>
@@ -23,6 +45,8 @@ let Api = () => {
                     <th> CONTACT </th>
                     <th> CITY </th>
                     <th> EMAIL </th>
+                    <th> DELETE </th>
+                    <th> EDIT </th>
                 </tr>
                 {
                     apidata.map((e) =>
@@ -32,16 +56,41 @@ let Api = () => {
                             <td>{e.contact} </td>
                             <td>{e.city} </td>
                             <td>{e.email} </td>
-
+                            <td> <button onClick={() => handleDelete(e.id)}> Delete </button> </td>
+                            <td> <button onClick={() => (setShowfrm(true), setEditdata(e))}> Edit </button> </td>
                         </tr>
                     )
                 }
-
-
             </table>
+            <br />
+
+            <hr />
+
+            {showfrm && <form action="" onSubmit={finalEdit} >
+                <label htmlFor="">id</label>
+                <input type="text" name="id" value={editdata.id} hidden onChange={handleEdit} /> <br /> <br />
+
+                <label htmlFor="">Name</label>
+                <input type="text" name="name" value={editdata.name} onChange={handleEdit} /> <br /> <br />
+
+                <label htmlFor="">Contact</label>
+                <input type="text" name="contact" value={editdata.contact} onChange={handleEdit} /> <br /> <br />
+
+                <label htmlFor="">City</label>
+                <input type="text" name="city" value={editdata.city} onChange={handleEdit} /> <br />  
+                <br />
+
+                <label htmlFor="">Email</label>
+                <input type="text" name="email" value={editdata.email} onChange={handleEdit} /> <br /> <br />
+
+                <input type="submit" />
+
+            </form>}
 
         </>
     )
 }
 
-export default Api  
+export default Api
+
+

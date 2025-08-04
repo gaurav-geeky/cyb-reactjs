@@ -17,7 +17,7 @@ function Form() {
         let { name, value } = e.target
         setFrmdata({ ...frmdata, [name]: value })
     }
-
+    //                              userdata comes from  Data.json check it
     function finalsubmit(e) {
         e.preventDefault()
         axios.post('http://localhost:3000/userdata', frmdata)
@@ -25,7 +25,6 @@ function Form() {
             .catch((err) => alert(err))
 
         navigator('./api')
-
     }
 
 
@@ -56,3 +55,11 @@ function Form() {
     )
 }
 export default Form
+
+/*  
+to show data in form run both  (keep both onn ) 
+
+a.   json-server --watch Data.json  
+b.   npm run dev 
+
+*/

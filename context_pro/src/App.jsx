@@ -15,8 +15,6 @@ let name = " I am from app page"
 
 let game = " ... cricket, badminton,  volleyball ...."
 
-
-
 // object global 
 let user = {
   name: "react class",
@@ -36,15 +34,30 @@ function App() {
 
 
       {/*   object wala  */}
-      <store.Provider value={user}>
+      <store.Provider value={{user, game}}>
+  
         <Dashboard />
       </store.Provider>
       
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/*  game var */}
-      <store.Provider value={game}>
+      {/* <store.Provider value={game}>
         <Dashboard />
-      </store.Provider>  
+      </store.Provider>   */}
 
       {/* <storegame.Provider value={game}>
     <Dashboard /> 
@@ -55,4 +68,4 @@ function App() {
 }
 
 export default App
-export { store,  }
+export { store  }

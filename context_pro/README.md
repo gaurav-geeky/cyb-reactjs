@@ -28,3 +28,23 @@ consumer -  accept
 to provide data in variable form
 
 usecontext  :  for accepting data which is being provided ( so now we do not need store.consumer )
+
+# to get multiple variable value in  1 componenet using store. consumer 
+
+      {/*   object wala , game wala both */}
+
+      <store.Provider value={{user, game}}>
+  
+        <Dashboard />
+      </store.Provider>
+
+ #    componenet me 
+ 
+___ for use context only ___ 
+  let {user, game} = useContext(store) 
+
+   <h1> data from app to dashboard name: __ usecontext__ {user.name} & {user.pass}   </h1>
+
+    <h1> this is game in use context ___ {game} </h1> 
+
+
