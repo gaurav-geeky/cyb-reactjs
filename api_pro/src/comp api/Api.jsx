@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 
 let Api = () => {
 
-    let [showfrm, setShowfrm] = useState() // to edit data 1st show form 
+    let [showfrm, setShowfrm] = useState(false) // to edit data 1st show form.  becomes true(visible) on click edit 
 
     let [editdata, setEditdata] = useState({})  // now edit data 
 
@@ -16,7 +16,7 @@ let Api = () => {
     //                                      here handle  data being edited
     function finalEdit(e) {
         e.preventDefault()
-        axios.put(`http://localhost:3000/userdata/${editdata.id}`, editdata)
+        axios.put(`http://localhost:3000/userdata/${editdata.id}`, editdata)   // editdata.id  is ID   ko iss object me put krna hai .   
             .then(() => alert("updated..."))
     }
     
@@ -86,11 +86,9 @@ let Api = () => {
                 <input type="submit" />
 
             </form>}
-
         </>
     )
 }
-
 export default Api
 
 

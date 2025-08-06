@@ -42,6 +42,7 @@ function App() {
 
         <img src="girl.png" alt="pic" className='absolute  right-59 bottom-0' />
 
+        <h1 className='text-'>hello</h1>
       </section>
 
     </>

@@ -35,16 +35,16 @@ function Form() {
             <form action="" onSubmit={finalsubmit}>
 
                 <label htmlFor=" "> Name </label>
-                <input type="text" name="name" onChange={handleInput} /> <br />
+                <input type="text" name="name" onChange={handleInput} /> <br /> <br /> 
 
                 <label htmlFor=" "> Contact </label>
-                <input type="text" name="contact" onChange={handleInput} />  <br />
+                <input type="text" name="contact" onChange={handleInput} />  <br /> <br /> 
 
                 <label htmlFor=" "> City </label>
-                <input type="text" name="city" onChange={handleInput} />  <br />
+                <input type="text" name="city" onChange={handleInput} />  <br /> <br /> 
 
                 <label htmlFor=" "> Email </label>
-                <input type="text" name="email" onChange={handleInput} />  <br />
+                <input type="text" name="email" onChange={handleInput} />  <br /> <br /> 
 
                 <input type="submit" />
             </form>

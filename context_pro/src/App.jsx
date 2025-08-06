@@ -41,19 +41,6 @@ function App() {
       
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
       {/*  game var */}
       {/* <store.Provider value={game}>
         <Dashboard />
