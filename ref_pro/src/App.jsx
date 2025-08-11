@@ -5,10 +5,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  let myRef = useRef()
+  let myRef = useRef() 
 
   function inputfocus() {
-    myRef.current.focus()
+    myRef.current.focus() 
   }
 
   function change() { 
