@@ -2,13 +2,17 @@ import { useRef, useState } from 'react'
 import './App.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Ref from './component/Ref';
+
 
 function App() {
 
   let myRef = useRef() 
+  let fRef = useRef() 
 
   function inputfocus() {
-    myRef.current.focus() 
+    fRef.current.focus() 
+    
   }
 
   function change() { 
@@ -22,6 +26,11 @@ function App() {
   return (
     <>
       <h1> app jsx in reference </h1>
+      
+      <input type="text" ref={fRef} />
+      <button onClick={inputfocus}> tap here </button>
+
+      <Ref/> 
 
       <ToastContainer position="top-center" theme="dark" transition="Bounce" />
 
@@ -30,9 +39,6 @@ function App() {
       <hr />
       <br />
 
-      <input type="text" ref={myRef} />
-
-      <button onClick={inputfocus}> tap here </button>
 
       <br />
       <hr />

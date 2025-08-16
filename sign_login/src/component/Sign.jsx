@@ -55,11 +55,11 @@ function Signform() {
 
     return (
         <>
-            <section className=" w-full h-100  flex flex-col items-center bg-[url(../tshirt/bgsign.jpg)] bg-no-repeat bg-cover"> 
+            <section className=" w-full bg-amber-100  flex flex-col items-center  "> 
 
                 <h1 className=" text-2xl p-3 font-black  "> Sign-up here</h1>
 
-                <form className=" w-150 p-3 pl-9 text-1xl rounded-3xl border-none bg-emerald-100 " onSubmit={handleSubmit}>
+                <form className=" w-150 p-3 pl-9 text-1xl rounded-3xl border-none bg-emerald-100  " onSubmit={handleSubmit}>
 
                     <label htmlFor="">Name</label> &ensp;
                     <input className=" border-1 p-1" type="text" name="name" onChange={handleInput} /> <br /> <br />
