@@ -1,5 +1,5 @@
-import { useState } from "react" 
-import { useNavigate } from "react-router-dom"
+import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 
 let Form = () => {
@@ -13,20 +13,21 @@ let Form = () => {
         setInfo({ ...info, [name]: value })
     }
 
+
     let [showdata, setShowdata] = useState({})    //     to show data sm where. 
 
     let navigate = useNavigate()
-    
-    let final = (e) => {      //         final submission pr form rok     ke   data console kiya
+
+
+    let final = (e) => {      //                        final submission pr form rok     ke   data console kiya
         e.preventDefault()
         console.log(info)
-        //                               localStorage  set to   store value and  get to print anywhere
+        //                                                      localStorage  set to   store value and  get to print anywhere
         localStorage.setItem("userInfo", JSON.stringify(info))
         let got = JSON.parse(localStorage.getItem("userInfo"))
         setShowdata(got)
 
-        navigate('/color')   
-
+        navigate('/')  // same path as we gave in app jsx 
     }
 
 
@@ -34,19 +35,22 @@ let Form = () => {
         <>
 
             <div style={{ width: "100%", height: "85vh", backgroundColor: "lightyellow" }} >
-                <h1 style={{ fontSize: "40px", color: "red"}}> this is form component</h1>
+                <h1 style={{ fontSize: "40px", color: "red" }}> this is form component</h1>
 
+                <Link to="/color"> color</Link>  &ensp; &ensp;  
+                <Link to="/"> state</Link>
+                <br /> <br /> <br />
 
                 <form action="" onSubmit={final}>
 
                     <label htmlFor=""> NAME </label>
-                    <input type="text" name="name" onChange={Value} /> <br /> <br />
+                    <input className="border-1 p-1 " type="text" name="name" onChange={Value} /> <br /> <br />
 
                     <label htmlFor=""> EMAIL </label>
-                    <input type="text" name="email" onChange={Value} /> <br /> <br />
+                    <input className="border-1 p-1 " type="text" name="email" onChange={Value} /> <br /> <br />
 
                     <label htmlFor=""> PASSWORD </label>
-                    <input type="text" name="password" onChange={Value} />  <br /> <br />
+                    <input className="border-1 p-1  " type="text" name="password" onChange={Value} />  <br /> <br />
 
                     click <input type="submit" />
 
