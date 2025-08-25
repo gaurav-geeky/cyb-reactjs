@@ -14,12 +14,12 @@ import { Gi3dGlasses } from "react-icons/gi";    // icons in react    ICONS
 
 const App = () => {  
 
-    // let info = { 
-    //     name: "jay", 
-    //     age: 34, 
-    //     city: "bhopal"
+    let info = { 
+        name: "jay", 
+        age: 34, 
+        city: "bhopal"
 
-    // }
+    }
 
     let fname = "vikas";  
 

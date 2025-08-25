@@ -25,7 +25,10 @@ function App() {
   }
   return (
     <>
-      <h1> app jsx in reference </h1>
+      <h1> app jsx in reference </h1> <br /> 
+
+      <Ref/> 
+      <br /> <hr /> 
       
       <input type="text" ref={fRef} />
       <button onClick={inputfocus}> tap here </button>

@@ -2,7 +2,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-
 let Api = () => {
 
     let [showfrm, setShowfrm] = useState(false) // to edit data 1st show form.  becomes true(visible) on click edit 
@@ -19,9 +18,9 @@ let Api = () => {
         axios.put(`http://localhost:3000/userdata/${editdata.id}`, editdata)   // editdata.id  is ID   ko iss object me put krna hai .   
             .then(() => alert("updated..."))
     }
-    
+
     //                                    delete always using id (unique)(with useEffect it delete immediatley , browser change on each delete)
-    
+
     function handleDelete(id) {
         axios.delete(`http://localhost:3000/userdata/${id}`)
             .then(() => alert("Deleted..!! "))
@@ -29,10 +28,12 @@ let Api = () => {
 
     let [apidata, setApidata] = useState([])  // to show data in form
 
+    //  get data  get data 
     useEffect(() => {
         axios.get('http://localhost:3000/userdata')
             .then((res) => setApidata(res.data))
     }, [handleDelete])
+
 
     return (
         <>
@@ -66,26 +67,27 @@ let Api = () => {
 
             <hr />
 
-            {showfrm && <form action="" onSubmit={finalEdit} >
-                <label htmlFor="">id</label>
-                <input type="text" name="id" value={editdata.id} hidden onChange={handleEdit} /> <br /> <br />
+            {showfrm &&
+                <form action="" onSubmit={finalEdit} >
+                    <label htmlFor="">Id</label>
+                    <input type="text" name="id" value={editdata.id} hidden onChange={handleEdit} /> <br /> <br />
 
-                <label htmlFor="">Name</label>
-                <input type="text" name="name" value={editdata.name} onChange={handleEdit} /> <br /> <br />
+                    <label htmlFor="">Name</label>
+                    <input type="text" name="name" value={editdata.name} onChange={handleEdit} /> <br /> <br />
 
-                <label htmlFor="">Contact</label>
-                <input type="text" name="contact" value={editdata.contact} onChange={handleEdit} /> <br /> <br />
+                    <label htmlFor="">Contact</label>
+                    <input type="text" name="contact" value={editdata.contact} onChange={handleEdit} /> <br /> <br />
 
-                <label htmlFor="">City</label>
-                <input type="text" name="city" value={editdata.city} onChange={handleEdit} /> <br />  
-                <br />
+                    <label htmlFor="">City</label>
+                    <input type="text" name="city" value={editdata.city} onChange={handleEdit} /> <br />
+                    <br />
 
-                <label htmlFor="">Email</label>
-                <input type="text" name="email" value={editdata.email} onChange={handleEdit} /> <br /> <br />
+                    <label htmlFor="">Email</label>
+                    <input type="text" name="email" value={editdata.email} onChange={handleEdit} /> <br /> <br />
 
-                <input type="submit" />
+                    <input type="submit" />
 
-            </form>}
+                </form>}
         </>
     )
 }

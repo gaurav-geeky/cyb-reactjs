@@ -13,7 +13,7 @@ let State = () => {
     useEffect(() => {
         let show = JSON.parse(localStorage.getItem("userInfo"))
         setInfo(show)
-    }, [])
+    }, []) 
 
     
     return (

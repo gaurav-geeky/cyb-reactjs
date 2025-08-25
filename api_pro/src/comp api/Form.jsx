@@ -3,13 +3,11 @@ import axios from "axios"
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom'  // local form with navigator
 
-
 function Form() {
 
     let [frmdata, setFrmdata] = useState({
         name: "", contact: "", city: "", email: ""
     })
-
 
     let navigator = useNavigate()
 
@@ -26,7 +24,6 @@ function Form() {
 
         navigator('./api')
     }
-
 
     return (
         <>
@@ -59,7 +56,8 @@ export default Form
 /*  
 to show data in form run both  (keep both onn ) 
 
-a.   json-server --watch Data.json  
+a.   json-server --watch Data.json   ( to run this we need to go into this fild ) 
+//   cd src  _____  cd comp api _____  cd data.json
 b.   npm run dev 
 
 */

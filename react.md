@@ -246,11 +246,11 @@ outlet
 
 by default index is main page , so always put     <Route  index element={<Home />} />  
 # index 
-as a path to find  home page  <home/ >
+as a path to find  home page  <home />
 
 #  _________________________________________________________
 
-1.   #        <Route index element={ <Home />}  />
+1.   #        <Route index element={ < Home />}  />
     to show home page in index   we do not need path  just 
     write  index
 
@@ -306,7 +306,7 @@ so to go on   index ______  path ___ " / "  b
 
 <Routes>  
         <!--  here  path="/" element={ <Layout/ > }  means main page will look like      Layout  and  " / "   / is to show main index page.   --> 
-    <Route path="/" element={ <Layout/ > }>  
+    <Route path="/" element={ < Layout /> }>  
     <!-- layout jsx is comp    call in route  -->
           <!--  path  /   because har page pe ye layout chahiye .
           layout element  will   render in it.
@@ -460,4 +460,5 @@ data  will be  shown  when we submit  form.
 in jsx go one  to another   LINk  tag 
 
 in function use   navigator  to   go   1 to another page.  
-functin name anything . 
+function name anything.   
+
