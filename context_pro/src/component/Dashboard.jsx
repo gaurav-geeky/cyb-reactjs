@@ -38,29 +38,3 @@ function Dashboard() {
 }
 export default Dashboard
 
-
-// import { useContext } from "react";
-// import { store } from "../App";
-// import Setting from "./Setting";
-
-// function Dashboard() {
-//   const { user, game } = useContext(store);
-
-//   return (
-//     <>
-//       <h1>This is the dashboard</h1>
-//       <br />
-//       <h1>Data from App to Dashboard - Name: {user.name}</h1>
-//       <h1>Data from App to Dashboard - Email: {user.email}</h1>
-//       <h1>Data from App to Dashboard - Password: {user.pass}</h1>
-//       <h1>This is game in useContext: {game.title}</h1>
-//       <br /><br />
-//       {/* <store.Consumer>
-//         {(data) => <h1>Data in Dashboard from App.js (Consumer): {data.user.name}</h1>}
-//       </store.Consumer> */}
-//       <Setting />
-//     </>
-//   );
-// }
-
-// export default Dashboard;

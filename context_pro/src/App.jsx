@@ -9,9 +9,7 @@ let store = createContext()  // global because kahi bhi bhej sakte hai
 //                            // if made insdie then it becomes local 
 let name = " I am from app page"
 
-
 //  jitni cheze bhejni hai utne function banenge arrow wale (jaha bhejna hai )
-
 
 let game = " ... cricket, badminton,  volleyball ...."
 

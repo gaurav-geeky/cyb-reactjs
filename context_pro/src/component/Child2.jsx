@@ -13,14 +13,6 @@ function Child2 () {
 
         <h1> this is child2 in data (name var) : {ok} </h1>
 
-        {/* < store.Consumer>
-            {
-                (data) => <h1> data from app to child 2 (context api) __ {data} </h1>
-            }
-           
-        </store.Consumer> */}
-
- {/*  jitni  value aayegi  utne arrow funtion  */}
         </>
     )
 
@@ -28,6 +20,4 @@ function Child2 () {
 export default Child2 
 
 
-// app js me comp call hota hai  2 compo  dashboard jsx , setting jsx call in apjsx 
-// pass ob from app jsx     dashboard pe name  and setting pe  mail/ pass (context api use kare )
-// 
+
