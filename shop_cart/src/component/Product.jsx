@@ -4,9 +4,12 @@ import m2 from "../assets/cloth/m2.png"
 import m3 from "../assets/cloth/m3.png"
 
 import { addItem, decreaseQ, deleteQ, increaseQ } from './Cartslice'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux' 
+import { useNavigate } from 'react-router-dom';
 
-function Product() {
+function Product() { 
+
+  let move = useNavigate(); 
 
   let productList = [
     { pid: 1, pname: "tshirt 1", pprice: 225.00, pimg: m1 },
@@ -41,17 +44,17 @@ function Product() {
   return (
     <>
       <h1> here are our products .  &ensp; &ensp; cart no. {eachItem.length}  </h1>
-      <section style={{ height: "600px", backgroundColor: "lightyellow", display: "flex", justifyContent: "center" }}>
+      <section style={{ height: "600px", backgroundColor: "lightyellow", display: "flex", justifyContent: "space-around" }}>
         {
           productList.map((each) => (
 
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <img style={{ height: "150px" }} src={each.pimg} alt="" />
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "2%" }}>
+              <img style={{ height: "150px" }} src={each.pimg} alt="pic" />
 
               <div>
                 <h2> product name: {each.pname} </h2>
                 <h2> product id : {each.pid} </h2>
-                <h4> prodcue price : {each.pprice} </h4>
+                <h4> prodcut price : {each.pprice} </h4>
 
                 <button onClick={() => handleCart(each)} > Add Cart</button>
               </div>
@@ -98,9 +101,10 @@ function Product() {
           }
         </section  >
 
-        <article style={{ flexGrow: "1", backgroundColor: "lightpink", width: "200px" }}>
+        <article style={{ flexGrow: "1", backgroundColor: "lightpink", width: "200px", }}>
           <p> total no of item purchased : {totalq} </p>
           <p> total amount : {totalp} </p>
+          <button onClick={()=> move('/form')} > Buy now </button>
         </article>
 
       </section>
