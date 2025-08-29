@@ -16,24 +16,26 @@ function Apidata() {
 
     return (
         <>
-            <article style={{ border: "1px solid black", textAlign: "center", padding: "10px", backgroundColor: "lightblue"}}>
-                <h1> Get Dog Images using API link </h1>
+            <article 
+            style={{ border: "1px solid black", textAlign: "center", backgroundColor: "lightblue", height: "300px" }}>
 
-                <table border={1} style={{ width: "60%", margin: "auto", backgroundColor: "lightgreen"}} >
-                    <tr style={{ fontSize: "18px", color: "red"}}>
+                <div style={{ fontSize: "20px", padding: "15px"}}> Get Dog Images using API link </div>
+
+                <table border={1} style={{ width: "60%", margin: "auto", backgroundColor: "lightgreen" }} >
+                    <tr style={{ fontSize: "18px", color: "red" }}>
                         <th> Message </th>
                         <th> Status </th>
                         <th> Image </th>
-                    </tr> 
+                    </tr>
 
                     <tr>
                         <td> {data.message} </td>
                         <td> {data.status} </td>
                         <td> <img height={200} src={data.message} alt="pic" /> </td>
-                       
+
                     </tr>
                 </table>
-                
+
             </article>
         </>
     )
