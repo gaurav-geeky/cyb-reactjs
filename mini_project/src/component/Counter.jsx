@@ -15,19 +15,20 @@ function Counter() {
 
     return (
         <>
-            <div style={{
-                width: "100%",
+            <article style={{
+                width: "auto",
                 height: "auto",
                 backgroundColor: "skyblue",
                 textAlign: "center",
-                fontSize: "20px",
-
+                fontSize: "20px", 
+                padding: "20px auto", 
             }}>
-                <div> Counter </div>
+
+                <div style={{ padding: "5px auto"}}> Counter </div>
 
                 <div style={{
-                    width: "20%",
-                    margin: "5px auto",
+                    width: "20%", 
+                    margin: "auto", 
                     textAlign: "center",
                     display: "flex",
                     justifyContent: "space-around",
@@ -44,7 +45,7 @@ function Counter() {
                     <span style={{ fontSize: "22px", placeItems: "center" }}> {count} </span>
                 </div>
 
-            </div>
+            </article>
         </>
     )
 }

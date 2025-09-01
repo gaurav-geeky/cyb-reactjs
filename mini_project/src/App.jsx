@@ -3,6 +3,7 @@ import './App.css'
 import Apidata from './component/Apidata'
 import Counter from './component/Counter'
 import Todolist from './component/Todolist'
+import Atmpin from './component/Atmpin'
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <Apidata/>  
     <Counter/>  
 
-    <Todolist/> 
+    <Todolist/>  
+
+    <Atmpin/> 
       
     </>
   )

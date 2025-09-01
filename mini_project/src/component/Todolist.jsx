@@ -33,10 +33,10 @@ function Todolist() {
 
     return (
         <>
-            <section style={{ textAlign: "center", margin: "80px auto" }}>
+            <section style={{ textAlign: "center", padding: "20px", border: "1px solid red", backgroundColor: "pink" }}>
                 <>
                     <div>
-                        <p style={{ fontSize: "30px", color: "orange", fontWeight: "bold" }}>TODOLIST New practice </p>
+                        <p style={{ fontSize: "30px", color: "blue", fontWeight: "bold" }}>TODOLIST New practice </p>
                         <input
                             type="text"
                             style={{ padding: "3px" }}
