@@ -21,10 +21,11 @@ function Counter() {
                 backgroundColor: "skyblue",
                 textAlign: "center",
                 fontSize: "20px", 
-                padding: "20px auto", 
+                paddingTop: "30px", 
+                paddingBottom: "30px"
             }}>
 
-                <div style={{ padding: "5px auto"}}> Counter </div>
+                <div style={{ paddingBottom: "10px"}}> Counter </div>
 
                 <div style={{
                     width: "20%", 
@@ -37,12 +38,12 @@ function Counter() {
                     <span style={{ display: "flex", justifyContent: "space-around", }}  >
                         <button style={{ fontSize: "20px", padding: "5px 9px" }} onClick={Decrement}> Decrease</button>
 
-                        <button style={{ fontSize: "20px", padding: "5px 9px" }} onClick={Increment}> Increase</button>
+                        <button style={{ fontSize: "20px", padding: "5px 9px", margin: "auto 10px", }} onClick={Increment}> Increase</button>
 
                         <button style={{ fontSize: "20px", padding: "5px 9px" }} onClick={() => setCount(0)}> Reset</button>
                     </span> &emsp;
 
-                    <span style={{ fontSize: "22px", placeItems: "center" }}> {count} </span>
+                    <span style={{ fontSize: "30px", }}> {count} </span>
                 </div>
 
             </article>
