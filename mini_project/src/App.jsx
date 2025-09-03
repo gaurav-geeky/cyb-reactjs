@@ -4,6 +4,7 @@ import Apidata from './component/Apidata'
 import Counter from './component/Counter'
 import Todolist from './component/Todolist'
 import Atmpin from './component/Atmpin'
+import Agecal from './component/Agecal'
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
 
     <Todolist/>  
 
-    <Atmpin/> 
+    <Atmpin/>  
+
+    <Agecal/> 
       
     </>
   )
