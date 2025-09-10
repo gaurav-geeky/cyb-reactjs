@@ -5,6 +5,7 @@ import Counter from './component/Counter'
 import Todolist from './component/Todolist'
 import Atmpin from './component/Atmpin'
 import Agecal from './component/Agecal'
+import Bgcolor from './component/Bgcolor'
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
 
     <Atmpin/>  
 
-    <Agecal/> 
+    <Agecal/>  
+
+    <Bgcolor/>
       
     </>
   )
