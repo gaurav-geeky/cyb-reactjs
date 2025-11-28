@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     let api = `${import.meta.env.VITE_BACK}/login`;
     const response = await axios.post(api, frm, { withCredentials: true });
-    alert(response.data);
+    alert(response.data.msg);
     navigate("/dashboard")
   }
 

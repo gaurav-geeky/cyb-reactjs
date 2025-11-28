@@ -1,25 +1,38 @@
+import axios from 'axios';
 import React from 'react'
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 
 const Dashboard = () => {
   const [mydata, setmydata] = useState("");
 
-  useEffect(() => {
-    (
-      async () => {
+  const dashboard = async () => {
       let api = `${import.meta.env.VITE_BACK}/dashboard`;
-      const response = await axios.gte(api);
-      console.log(response.data.msg);
+      const response = await axios.get(api, {
+        withCredentials: true  // VERY IMPORTANT
+      });
+      console.log("MSG:", response.data.msg);
+      setmydata(response.data.user);
     }
-    )
+
+  useEffect(() => {
+    dashboard();
   }, [])
+
+  const logout = async () => {
+    let api = `${import.meta.env.VITE_BACK}/logout`;
+    const response = await axios.get(api, { withCredentials: true });
+    
+    alert(response.data.msg);
+  }
 
   return (
     <>
       <section>
 
-        hello iam dahbaord in session lgoin
+        <h1>Dashboard page </h1>
+        <h2> welcome {mydata.name} your email : {mydata.email} </h2>
+        <button onClick={logout}>Logout</button>
 
       </section>
     </>

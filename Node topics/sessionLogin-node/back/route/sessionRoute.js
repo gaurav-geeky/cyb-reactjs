@@ -29,17 +29,6 @@ router.post("/register", async (req, res) => {
 });
 
 
-// router.post("/register", async (req, res) => {
-//     let { name, email, password } = req.body;
-//     const exist = await User.findOne({ email });
-//     if (exist) return res.json({ msg: "Email already exists" });
-
-//     password = await bcrypt.hash(password, 10);
-//     await User.create({ name, email, password });
-//     res.json({ msg: "Account created" });
-// });
-
-
 // Login
 router.post("/login", async (req, res) => {
     console.log("Login detail : ", req.body)
@@ -68,33 +57,46 @@ router.post("/login", async (req, res) => {
     }
 })
 
-// router.post("/login", async (req, res) => {
-//     let { email, password } = req.body;
-//     const user = await User.findOne({ email });
-//     if (!user) return res.json({ msg: "User not found" });
+// authentication middleware
+function isAuth(req, res, next) {
+    if (!req.session.user) {
+        return res.json({ msg: "Not logged in" });
+    }
+    next();
+}
 
-//     const valid = await bcrypt.compare(password, user.password);
-//     if (!valid) return res.json({ msg: "Wrong Password" });
-
-//     req.session.user = user;
-//     res.json({ msg: "Login success", user });
-// });
 
 // Dashboard
-router.get("/dashboard", (req, res) => {
-    if(req.session.user) return res.json({msg: ""})
-})
+router.get("/dashboard", isAuth, async (req, res) => {
 
-// router.get("/dashboard", (req, res) => {
-//     if (req.session.user) return res.json({ msg: "Welcome", user: req.session.user });
-//     else return res.json({ msg: "Not logged in" });
-// });
+    try {
+         if (!req.session.user) {
+            return res.json({ msg: "Not logged in" });
+        }
+
+        const userid = req.session.user.id;
+        const user = await User.findById(userid).select("-password");
+
+        if (!user) return res.json({ msg: "User not found !" });
+
+        console.log("dashboard success", user);
+        res.json({ user: user, msg: "User data found !" })
+    }
+    catch (error) {
+        console.log(error);
+        return res.json({ msg: "Not logged in", error: error.message });
+    }
+});
+
+
 
 // Logout
-router.get("/logout", (req, res) => {
-    req.session.destroy();
-    res.json({ msg: "Logged out" });
-});
+router.get("/logout", async (req, res) => {
+    req.session.destroy(() => {
+        res.json({ msg: "Logged out" });
+    });
+})
+
 
 module.exports = router;
 
